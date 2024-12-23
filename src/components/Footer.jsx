@@ -14,17 +14,21 @@ const Footer = () => {
         {/* Get In Touch Section */}
         <div>
           <h3 className="mb-4 font-bold">Get In Touch</h3>
-          <p className="text-sm">fortunebuildersbpl@yahoo.co.in</p>
-          <p className="mt-2 text-sm">0755-4049500, 9111006626</p>
+          <p className="text-sm">swastikconstruction545@gmail.com</p>
+          <p className="mt-2 text-sm">+91 808599475, 8602954488</p>
         </div>
 
         {/* Address Section */}
         <div>
           <h3 className="mb-4 font-bold">Address</h3>
           <p className="text-sm">
-            Fortune House, 157, Zone-I, <br />
-            M.P. Nagar Bhopal-462011 (M.P.) India
-          </p>
+            <span className="font-bold">Site Add :</span>
+<span className="text-sm ms-2">Adjacent Ruchi Life Scxape, Near Shani Mandir, Hoshangabad Road, Bhopal (M.P.)</span>  
+        </p>
+        <p className="text-sm mt-2">
+        <span className="font-bold">Office Add :</span>
+        <span className="text-sm ms-2">C-255, Shree Rameshwaram, CPA 80 Feet Road, Baghmugaliya, Bhopal (M.P.)</span>
+        </p>
         </div>
 
         {/* Privacy Policy Section */}

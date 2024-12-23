@@ -28,9 +28,9 @@ const Navbar = () => {
         <div className="w-full px-3 py-4 text-sm text-white bg-black">
           <div className="container flex justify-end gap-3 mx-auto items-right">
             <span className="flex gap-2">
-              <IoLogoWhatsapp className="text-lg" /> PHONE: 91-7247765172
+              <IoLogoWhatsapp className="text-lg" /> PHONE: 91-808599475
             </span>
-            <span> EMAIL: swastikbuilders.in</span>
+            <span> EMAIL: swastikconstruction545@gmail.com</span>
           </div>
         </div>
       )}
@@ -83,8 +83,9 @@ const Navbar = () => {
             <span>
               <FaFacebookF />
             </span>
-            <span>
+            <span><a href="https://www.instagram.com/swastik_constructions_?igsh=YTRseXllYTFoMjVh">
               <IoLogoInstagram className="font-base"/>
+              </a>
             </span>
             <span>
               <IoLogoYoutube />
