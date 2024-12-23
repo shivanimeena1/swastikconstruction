@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     './index.html', 
@@ -8,8 +9,14 @@ module.exports = {
     extend: {
       colors: {
         purpleCustom: "#4c4a82",
+        gold: "#d4af37",
+      },
+      fontFamily: {
+        openSans: [ '"Tajawal", Arial, Helvetica, sans-serif'],
+        cinzel: ['"Cinzel"', 'serif'],
+        archivo:['"Archivo", sans-serif']
       },
     },
   },
   plugins: [],
-}
+};

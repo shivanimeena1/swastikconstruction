@@ -3,9 +3,11 @@ import App from '../App';
 
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
+import Footer from '../components/Footer';
 import { Navigate } from 'react-router-dom';
 import { Outlet } from 'react-router-dom';
-
+import Choose from '../components/Choose';
+import Nearby from '../components/Nearby';
 export const router = createBrowserRouter([
   {
     path: '/',
@@ -19,8 +21,19 @@ export const router = createBrowserRouter([
           <>
             <Navbar />
             <Hero />
+            <Choose/>
+            <Nearby/>
+            <Footer/>
           </>
         ),
+      },
+      {
+        path: 'choose',
+        element:<Choose/>
+          
+           
+          
+        
       },
     ],
   },
