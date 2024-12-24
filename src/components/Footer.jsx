@@ -1,56 +1,62 @@
 import React from "react";
+import footerImage from "../assets/footer_111111.jpg";
 
 const Footer = () => {
   return (
-    <footer className="px-4 py-8 text-white bg-yellow-900">
-        <div className="flex items-center justify-center gap-6 py-4 text-xl ">
-<span >Whatsapp</span>
-<span className="font-archivo">Instagram</span>
-<span>Facebook</span>
-<span>Twitter</span>
-        </div>
-      <div className="grid grid-cols-1 gap-8 mx-auto mt-5 text-center max-w-7xl md:grid-cols-3 md:text-left">
-        
-        {/* Get In Touch Section */}
-        <div>
-          <h3 className="mb-4 font-bold">Get In Touch</h3>
-          <p className="text-sm">fortunebuildersbpl@yahoo.co.in</p>
-          <p className="mt-2 text-sm">0755-4049500, 9111006626</p>
+    <footer className=" text-white bg-[#2a1771] mt-28">
+      {/* Image as background, ensuring it's fully visible and centered */}
+      <div
+        className=" top-[50px] w-full h-[320px] bg-cover bg-center "
+        style={{ backgroundImage: `url(${footerImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+      ></div>
+
+      <div className="container px-6 py-12 mx-auto">
+        <div className="flex flex-col items-center justify-between lg:flex-row">
+          <div className="text-center lg:w-1/2 lg:text-left">
+            <h3 className="mb-4 text-4xl uppercase font-futura">
+              Move into the majestic marvel with absolute exclusivity
+            </h3>
+          </div>
+         
         </div>
 
-        {/* Address Section */}
-        <div>
-          <h3 className="mb-4 font-bold">Address</h3>
-          <p className="text-sm">
-            Fortune House, 157, Zone-I, <br />
-            M.P. Nagar Bhopal-462011 (M.P.) India
-          </p>
+        <div className="grid grid-cols-1 gap-8 mt-8 md:grid-cols-2 lg:grid-cols-4">
+          <div>
+            <h4 className="mb-2 text-3xl font-futura">Contact Us</h4>
+            <p className="text-xl">
+              2, Swastik Disa Corporate Park, Opp. Shreyas Cinemas, LBS Rd,
+              Ghatkopar (West), Mumbai-86.
+            </p>
+          </div>
+          <div>
+            <h4 className="mb-2 text-3xl font-futura">Quick Link</h4>
+            <ul className="space-y-2">
+              <li className="text-xl">→ About</li>
+              <li className="text-xl">→ Redevelopment</li>
+              <li className="text-xl">→ FAQ</li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="mb-2 text-3xl font-futura">Ongoing Projects</h4>
+            <ul className="space-y-2">
+              <li className="text-xl">→ Swastik Avighna</li>
+              <li className="text-xl">→ Swastik Divine</li>
+              <li className="text-xl">→ Swastik Onyx</li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="mb-2 text-3xl font-futura">Completed Projects</h4>
+            <ul className="space-y-2">
+              <li className="text-xl">→ Swastik Goldcrest Business Park</li>
+              <li  className="text-xl">→ Swastik Sapphire Business Annexe</li>
+              <li className="text-xl">→ Swastik Signature Business Park</li>
+            </ul>
+          </div>
         </div>
 
-        {/* Privacy Policy Section */}
-        <div>
-          <h3 className="mb-4 font-bold">Privacy Policy</h3>
-          <ul>
-            <li className="text-sm">
-              <a href="#" className="hover:underline">
-                Disclaimer
-              </a>
-            </li>
-            <li className="mt-2 text-sm">
-              <a href="#" className="hover:underline">
-                Sitemap
-              </a>
-            </li>
-          </ul>
+        <div className="mt-8 text-center">
+          <span className="text-lg">&copy; 2024 Swastik Constructions. All Rights Reserved.</span>
         </div>
-      </div>
-
-      {/* Bottom Section */}
-      <div className="pt-4 mt-8 text-sm text-center border-t border-gray-700">
-        <p>
-          © 2024 <span className="font-semibold text-orange-500">Swastik Builders</span>. All Rights Reserved. | Powered by{" "}
-          <span className="font-semibold text-orange-500">SynQues</span>
-        </p>
       </div>
     </footer>
   );

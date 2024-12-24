@@ -45,7 +45,7 @@ const Choose = () => {
         </h2>
         <div className="flex items-center justify-center mt-14 space-x-36">
           <div className="space-y-2">
-            <p className="text-6xl font-semibold text-[#444175] font-cinzel">1983</p>
+            <p className="text-6xl font-semibold text-[#444175] font-cinzel">2023</p>
             <p className="text-sm text-gray-600 font-openSans">SINCE</p>
             <p className="text-lg text-gray-500 ">Delivering Quality</p>
           </div>
