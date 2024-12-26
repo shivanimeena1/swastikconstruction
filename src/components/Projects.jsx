@@ -6,7 +6,7 @@ const Projects = () => {
     <section id="projects" className="py-12 bg-gray-100">
       <div className="container mx-auto px-4">
         {/* Section Heading */}
-        <h2 className="text-5xl font-bold text-center text-[#dda54f] mb-4">
+        <h2 className="text-6xl font-bold text-center font-serif text-[#dda54f] mb-4">
           Our Projects
         </h2>
 
@@ -34,8 +34,8 @@ const Projects = () => {
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center text-white text-center p-4 transition duration-300 ease-in-out">
-              <h3 className="text-xl font-bold mb-2">Emerald Park</h3>
-              <p className="text-sm">
+              <h3 className="text-2xl font-bold font-serif mb-2">Emerald Park</h3>
+              <p className="text-lg font-serif">
                 A stunning residential project with breathtaking views and premium amenities.
               </p>
             </div>

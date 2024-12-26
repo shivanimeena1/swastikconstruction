@@ -17,7 +17,7 @@ const Nearby = () => {
       className="py-16 mt-[100px] bg-center bg-cover"
       style={{ backgroundImage: `url(${bg})` }}
     >
-      <div className="container flex flex-col items-center p-6 mx-auto bg-transparent rounded-md bg-opacity-80 md:flex-row">
+      <div className="container flex flex-col items-center p-6 mx-2 bg-transparent rounded-md bg-opacity-80 md:flex-row">
         {/* Left Section */}
         <div className="px-4 mb-10 md:w-1/2">
           {/* <h4 className="mb-6 font-extrabold text-2xl tracking-widest text-white uppercase">
@@ -26,7 +26,7 @@ const Nearby = () => {
           <h1 className="mt-16 mb-6 text-4xl font-extrabold text-[#dda54f]">
             For Those Who Know <span className="text-[#dda54f]">How to Choose!</span>
           </h1>
-          <p className="leading-relaxed text-xl text-white font-semibold">
+          <p className="leading-relaxed text-xl  text-white font-semibold">
             Our every residential project starts with a vision and an emotion to
             provide everyone with an affordable home yet includes all the modern
             amenities. From the concept and design development to the structural,
@@ -37,15 +37,15 @@ const Nearby = () => {
         </div>
 
         {/* Right Section */}
-        <div className="px-4 mt-8 md:w-1/2 md:mt-0">
-          <h4 className="mb-4 text-xl tracking-widest text-[#dda54f]  uppercase">
+        <div className="px-4 mt-8  md:w-1/2 md:mt-0">
+          <h1 className="mb-4  text-xl font-bold tracking-widest text-[#dda54f]  uppercase">
             Our Residential Projects are Near to all Facilities!
-          </h4>
+          </h1>
           {facilities.map((facility, index) => (
             <div key={index} className="mb-4">
               <div className="flex items-center justify-between">
-                <span className="text-gray-800">{facility.name}</span>
-                <span className="text-sm text-blue-600">{facility.distance}</span>
+                <span className="text-white">{facility.name}</span>
+                <span className="text-lg text-white">{facility.distance}</span>
               </div>
               <div className="w-full h-2 bg-gray-300 rounded">
                 <div
