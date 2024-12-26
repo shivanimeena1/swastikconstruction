@@ -8,6 +8,7 @@ import { Outlet } from 'react-router-dom';
 import Choose from '../components/Choose';
 import Nearby from '../components/Nearby';
 import Features from '../components/Features';
+import Contact from '../components/Contact';
 export const router = createBrowserRouter([
 
   
@@ -18,7 +19,7 @@ export const router = createBrowserRouter([
     
     
       {
-        path: 'home',
+        path: '',
         element: (
           <>
             <Navbar />
@@ -32,11 +33,11 @@ export const router = createBrowserRouter([
       },
       {
         path: 'choose',
-        element:<Choose/>
-          
-           
-          
-        
+        element:<Choose/>    
+      },
+      {
+        path: 'Contact',
+        element:<Contact/>    
       },
     ],
   },

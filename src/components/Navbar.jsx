@@ -4,6 +4,7 @@ import { IoLogoWhatsapp } from "react-icons/io5";
 import { FaFacebookF } from "react-icons/fa6";
 import { IoLogoInstagram } from "react-icons/io";
 import { IoLogoYoutube } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isSticky, setIsSticky] = useState(false);
@@ -73,9 +74,9 @@ const Navbar = () => {
             <a href="#media" className="text-base font-semibold hover:underline">
               MEDIA
             </a>
-            <a href="#contact" className="text-base font-semibold hover:underline">
+            <Link to='Contact' className="text-base font-semibold hover:underline">
               CONTACT
-            </a>
+            </Link>
           </nav>
 
           {/* Contact Info */}
