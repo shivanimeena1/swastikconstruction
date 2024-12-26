@@ -4,13 +4,27 @@ import img2 from "../assets/img2.jpeg";
 import img3 from "../assets/img3.jpeg";
 import vid1 from "../assets/vid1.mp4";
 import vid2 from "../assets/vid2.mp4";
+import gl from '../assets/gl3.png'
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 const Gallery = () => {
   return (
-    <section className="py-12 bg-gray-100">
+    <>
+    <Navbar/>
+     <div className="relative w-full h-3/5">
+            <img
+              src={gl}
+              className="w-full h-1/2 object-cover"
+              alt="Contact Us"
+            />
+            <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50"></div>
+          </div>
+
+          <section className="py-12 bg-gray-100">
       <div className="container mx-auto px-4">
         {/* Section Heading */}
-        <h2 className="text-4xl font-bold text-[#dda54f] text-center  mb-8">
+        <h2 className="text-4xl font-bold text-orange-500 text-center  mb-8">
           Gallery
         </h2>
 
@@ -82,6 +96,9 @@ const Gallery = () => {
         </div>
       </div>
     </section>
+    <Footer/>
+    </>
+
   );
 };
 
