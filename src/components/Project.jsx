@@ -1,40 +1,29 @@
 import React from 'react';
 import Navbar from './Navbar';
-import buildingImage from '../assets/0.jpg'; // Background image
-import pdfFile from "../assets/pdf.pdf"; // Import the PDF file
+import pdf1 from '../assets/pdf1.jpg'
+import pdf2 from '../assets/pdf2.jpg'
+import pdf3 from '../assets/pdf3.jpg'
+import pdf4 from '../assets/pdf4.jpg'
+import pdf5 from '../assets/pdf5.jpg'
+import pdf6 from '../assets/pdf6.jpg'
+import Footer from './Footer';
 
 const Project = () => {
   return (
     <>
-      <Navbar />
-      {/* Background Image Section */}
-      <div
-        className="bg-cover bg-center bg-no-repeat h-screen w-full"
-        style={{ backgroundImage: `url(${buildingImage})` }}
-      >
-        {/* Content Section with overlay */}
-        <div className="flex flex-col items-center justify-center h-full bg-opacity-50 bg-black">
-          {/* PDF Embed Section */}
-          <div className="w-full h-4/5 overflow-auto bg-white shadow-md rounded-lg mt-8">
-            <iframe
-              src={pdfFile}
-              title="PDF Preview"
-              className="w-full h-full"
-            ></iframe>
-          </div>
 
-          {/* PDF Download Link */}
-          <div className="mt-6">
-            <a
-              href={pdfFile}
-              download="Project_Details.pdf"
-              className="bg-[#dda54f] text-white px-6 py-3 rounded-md text-lg font-medium shadow-md hover:bg-[#bf8e3e] transition"
-            >
-              Download Project Details (PDF)
-            </a>
-          </div>
-        </div>
-      </div>
+    <Navbar />
+<div className="bg-orange-800 h-[93px]"></div>
+      {/* Background Image Section */}
+ <div className="">
+<img src={pdf1} alt="" />
+<img src={pdf2} alt="" />
+<img src={pdf3} alt="" />
+<img src={pdf4} alt="" />
+<img src={pdf5} alt="" />
+<img src={pdf6} alt="" />
+ </div>
+ <Footer/>
     </>
   );
 };
