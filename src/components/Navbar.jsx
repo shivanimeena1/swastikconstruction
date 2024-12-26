@@ -50,7 +50,7 @@ const Navbar = () => {
 
           {/* Navigation */}
           <nav className="flex mt-5 space-x-20">
-            <Link to="/" className=" text-2xl  font-semibold hover:underline">
+            <Link to="/" className=" font-semibold hover:underline">
               HOME
             </Link>
             <Link to="/aboutUs" className="hover:underline">
@@ -67,11 +67,11 @@ const Navbar = () => {
             </a> */}
             <Link
               to="/gallery"
-              className=" text-2xl font-semibold hover:underline"
+              className=" font-semibold hover:underline"
             >
               GALLERY
             </Link>
-            <Link to="contact" className="text-2xl font-semibold hover:underline">
+            <Link to="/Contact" className=" font-semibold hover:underline">
               CONTACT
             </Link>
           </nav>

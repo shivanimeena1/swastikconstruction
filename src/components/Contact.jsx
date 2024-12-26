@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from './Navbar'
 import contact from '../assets/contact-us3.png'
+import Footer from './Footer'
 
 const Contact = () => {
   return (
@@ -59,6 +60,7 @@ const Contact = () => {
           </button>
         </form>
       </div>
+      <Footer/>
     </>
   )
 }
