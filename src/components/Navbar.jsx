@@ -56,9 +56,9 @@ const Navbar = () => {
             <Link to="/aboutUs" className="hover:underline">
               ABOUT
             </Link>
-            <a href="#projects" className="hover:underline">
+            <Link to="/project" className="hover:underline">
               PROJECTS
-            </a>
+            </Link>
             {/* <a href="#blog" className="hover:underline">
               BLOG
             </a> */}
