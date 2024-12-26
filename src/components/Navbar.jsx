@@ -53,9 +53,9 @@ const Navbar = () => {
             <Link to="/" className="text-base font-semibold hover:underline">
               HOME
             </Link>
-            <a href="#about" className="hover:underline">
+            <Link to="/aboutUs" className="hover:underline">
               ABOUT
-            </a>
+            </Link>
             <a href="#projects" className="hover:underline">
               PROJECTS
             </a>

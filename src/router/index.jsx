@@ -11,6 +11,7 @@ import Features from '../components/Features';
 import Contact from '../components/Contact';
 import Projects from '../components/Projects';
 import Gallery from '../components/Gallery';
+import AboutUs from '../components/AboutUs';
 
 export const router = createBrowserRouter([
 
@@ -46,6 +47,10 @@ export const router = createBrowserRouter([
       {
         path: '/gallery',
         element:<Gallery/>   
+      },
+      {
+        path: '/aboutUs',
+        element:<AboutUs/>   
       },
     ],
   },
