@@ -9,9 +9,9 @@ import Footer from '../components/Footer';
 
 const images = [
   { src: bg, title: "Design 1" },
-  { src: bg1, title: "Design 2" },
+  { src: bg3, title: "Design 2" },
   { src: bg2, title: "Design 3" },
-  { src: bg3, title: "Design 4" }
+  { src: bg1, title: "Design 4" }
 ];
 
 const AboutUs = () => {

@@ -7,7 +7,7 @@ import { IoLogoInstagram } from "react-icons/io";
 import { IoLogoYoutube } from "react-icons/io5";
 import { FaBars } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
-import {IoLogoWhatsapp} from "react-icons/io";
+import { IoLogoWhatsapp } from "react-icons/io";
 
 const Navbar = () => {
   const [isSticky, setIsSticky] = useState(false);
@@ -17,28 +17,28 @@ const Navbar = () => {
     const handleScroll = () => {
       setIsSticky(window.scrollY > 10);
     };
-  
+
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  
+
   return (
     <div>
       {/* Top Section: Phone and Email */}
       {!isSticky && (
-        <div className="w-full px-3 py-6 text-lg text-white bg-black">
+        <div className="w-full px-3 py-3 text-white bg-gradient-to-r from-[#fa9a5a] to-[#ca7411]">
+
           <div className="container flex flex-col md:flex-row justify-between gap-3 mx-auto">
             <span className="flex gap-2 text-center md:text-left">
-              <TbBrandWhatsappFilled className="text-2xl text-white" /> PHONE: 91-808599475
+              <TbBrandWhatsappFilled className="text-2xl text-white" /> PHONE:
+              91-808599475
             </span>
             <span className="flex items-center gap-2 text-left">
-  <MdEmail className="text-2xl" />
-  EMAIL: swastikconstruction545@gmail.com
-</span>
-
-
+              <MdEmail className="text-2xl" />
+              EMAIL: swastikconstruction545@gmail.com
+            </span>
           </div>
         </div>
       )}
@@ -46,7 +46,9 @@ const Navbar = () => {
       {/* Sticky Navbar */}
       <header
         className={`fixed w-full z-20 transition-all duration-500 ease-in-out ${
-          isSticky ? "bg-white text-black shadow-md" : "bg-transparent text-white"
+          isSticky
+            ? "bg-white text-black shadow-md"
+            : "bg-transparent text-white"
         }`}
       >
         <div className="container relative flex items-center justify-between px-4 py-2 mx-auto">
@@ -66,8 +68,8 @@ const Navbar = () => {
           </div>
 
           {/* Navigation for larger screens */}
-          <nav className="hidden md:flex mt-5 space-x-20">
-            <Link to="/" className="font-semibold hover:underline">
+          <nav className="hidden md:flex mt-5 space-x-14">
+            <Link to="/" className=" hover:underline">
               HOME
             </Link>
             <Link to="/aboutUs" className="hover:underline">
@@ -76,10 +78,10 @@ const Navbar = () => {
             <Link to="/project" className="hover:underline">
               PROJECTS
             </Link>
-            <Link to="/gallery" className="font-semibold hover:underline">
+            <Link to="/gallery" className=" hover:underline">
               GALLERY
             </Link>
-            <Link to="/Contact" className="font-semibold hover:underline">
+            <Link to="/Contact" className=" hover:underline">
               CONTACT
             </Link>
           </nav>
