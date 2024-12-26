@@ -12,6 +12,7 @@ import bg1 from "../assets/bg1.jpg";
 import bg2 from "../assets/bg2.jpg";
 import bg3 from "../assets/bg3.jpg";
 import bg4 from "../assets/bg4.jpg";
+import bg6 from "../assets/bg6.jpg"
 
 const Hero = () => {
   return (
@@ -82,7 +83,7 @@ const Hero = () => {
         <SwiperSlide>
           <div
             className="h-full bg-center bg-cover"
-            style={{ backgroundImage: `url(${bg4})` }}
+            style={{ backgroundImage: `url(${bg6})` }}
           >
             <div className="absolute inset-0 bg-black opacity-50"></div>
             <div className="relative z-10 flex flex-col items-center justify-center h-full text-white">
