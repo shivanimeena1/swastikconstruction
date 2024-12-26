@@ -24,9 +24,9 @@ const Projects = () => {
           {/* Card 1 */}
           <div
             onClick={() =>
-              document.getElementById("projects").scrollIntoView({ behavior: "smooth" })
+              document.getElementById("project").scrollIntoView({ behavior: "smooth" })
             }
-            className="relative group w-80 h-64 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition duration-300 ease-in-out cursor-pointer"
+            className="relative group w-[600px] h-96 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition duration-300 ease-in-out cursor-pointer"
           >
             <img
               src={emerald}
