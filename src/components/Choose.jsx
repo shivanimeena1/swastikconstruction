@@ -37,7 +37,7 @@ const Choose = () => {
 
   return (
     <div className="font-sans">
-      {/* Header Section */}
+      {/* Header Section
       <section className="py-16 text-center">
         <h2 className="font-serif text-5xl text-[#444175]">
           <span className="text-[#dda54f]">WHY</span>{" "}
@@ -65,17 +65,17 @@ const Choose = () => {
             <p className="text-lg text-gray-500 ">Families</p>
           </div>
         </div>
-      </section>
+      </section> */}
     
 
-      <section className="py- mt-[3px] text-center">
-        <h1 className="text-5xl font-serif  text-[#dda54f]">A TRUE EPITOME OF ELEGANCE</h1>
+      <section className="py- mt-[90px] text-center">
+        <h1 className="text-6xl font-serif  text-[#dda54f]">A TRUE EPITOME OF ELEGANCE</h1>
       </section>
 
 
 
       {/* Cards Section */}
-      <section className="flex justify-center py-10 space-x-6">
+      <section className="flex justify-center py-10 space-x-7">
         {cardData.map((card) => (
           <CarouselCard key={card.id} images={card.images} />
         ))}
@@ -96,7 +96,7 @@ const CarouselCard = ({ images }) => {
   }, [images.length]);
 
   return (
-    <div className="relative overflow-hidden rounded-full shadow-lg w-80 h-80">
+    <div className="relative overflow-hidden rounded-full shadow-lg w-[500px] h-[500px]">
       {images.map((image, index) => (
         <div
           key={index}
@@ -106,9 +106,9 @@ const CarouselCard = ({ images }) => {
         >
           <img src={image.img} alt={image.title} className="object-cover w-full h-full" />
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
-            <div className="flex flex-col items-center justify-center w-48 h-48 bg-white rounded-full shadow-md bg-opacity-70">
-              <p className="font-bold uppercase text-[#444175]">{image.title}</p>
-              <p className="text-sm text-[#444175]">{image.description}</p>
+            <div className="flex flex-col items-center justify-center w-[350px] h-[350px] bg-white rounded-full shadow-md bg-opacity-70">
+              <p className="font-bold uppercase py-2 text-3xl text-[#444175]">{image.title}</p>
+              <p className="text-2xl font-serif text-[#444175]">{image.description}</p>
             </div>
           </div>
         </div>
