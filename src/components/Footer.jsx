@@ -24,8 +24,12 @@ const Footer = () => {
           <div>
             <h4 className="mb-2 text-3xl font-futura">Contact Us</h4>
             <p className="text-xl">
-              2, Swastik Disa Corporate Park, Opp. Shreyas Cinemas, LBS Rd,
-              Ghatkopar (West), Mumbai-86.
+            <span className="font-bold">Site Add :</span>
+            <span className="text-xl ms-2">Adjacent Ruchi Life Scxape, Near Shani Mandir, Hoshangabad Road, Bhopal (M.P.)</span>  
+            </p>
+            <p className="text-xl">
+            <span className="font-bold">Office Add :</span>
+            <span className="text-xl ms-2">C-255, Shree Rameshwaram, CPA 80 Feet Road, Baghmugaliya, Bhopal (M.P.)</span>
             </p>
           </div>
           <div>
@@ -36,20 +40,27 @@ const Footer = () => {
               <li className="text-xl">→ FAQ</li>
             </ul>
           </div>
-          <div>
+          {/* <div>
             <h4 className="mb-2 text-3xl font-futura">Ongoing Projects</h4>
             <ul className="space-y-2">
-              <li className="text-xl">→ Swastik Avighna</li>
-              <li className="text-xl">→ Swastik Divine</li>
-              <li className="text-xl">→ Swastik Onyx</li>
+              <li className="text-xl">→ Emerald Park</li>
+              
+            </ul>
+          </div> */}
+           <div>
+            <h4 className="mb-2 text-3xl font-futura">Get In Touch</h4>
+            <ul className="space-y-2">
+              <li className="text-xl">→ swastikconstruction545@gmail.com</li>
+              <li className="text-xl">→ +91 808599475, 8602954488</li>
+              {/* <li className="text-xl">→ FAQ</li> */}
             </ul>
           </div>
           <div>
             <h4 className="mb-2 text-3xl font-futura">Completed Projects</h4>
             <ul className="space-y-2">
-              <li className="text-xl">→ Swastik Goldcrest Business Park</li>
-              <li  className="text-xl">→ Swastik Sapphire Business Annexe</li>
-              <li className="text-xl">→ Swastik Signature Business Park</li>
+              <li className="text-xl">→ Emerald Park</li>
+              {/* <li  className="text-xl">→ Swastik Sapphire Business Annexe</li>
+              <li className="text-xl">→ Swastik Signature Business Park</li> */}
             </ul>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom"; // Import Link
 import logo from "../assets/logo.jpeg";
 import { IoLogoWhatsapp } from "react-icons/io5";
 import { FaFacebookF } from "react-icons/fa6";
@@ -9,11 +10,9 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const [isSticky, setIsSticky] = useState(false);
 
-  // Handle scroll to toggle sticky state
   useEffect(() => {
     const handleScroll = () => {
-      // Increase the threshold for when the navbar becomes sticky
-      setIsSticky(window.scrollY > 50); // You can adjust this value as needed
+      setIsSticky(window.scrollY > 50);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -29,9 +28,9 @@ const Navbar = () => {
         <div className="w-full px-3 py-4 text-sm text-white bg-black">
           <div className="container flex justify-end gap-3 mx-auto items-right">
             <span className="flex gap-2">
-              <IoLogoWhatsapp className="text-lg" /> PHONE: 91-7247765172
+              <IoLogoWhatsapp className="text-lg" /> PHONE: 91-808599475
             </span>
-            <span> EMAIL: swastikbuilders.in</span>
+            <span> EMAIL: swastikconstruction545@gmail.com</span>
           </div>
         </div>
       )}
@@ -46,35 +45,35 @@ const Navbar = () => {
       >
         <div className="container relative flex items-center justify-between px-4 py-3 mx-auto">
           {/* Logo */}
-          <div
-            className={`${
-              isSticky ? "mt-0" : "mt-[-32px]"
-            } text-4xl font-bold transition-all duration-300`}
-          >
+          <div className={`text-4xl font-bold transition-all`}>
             <img src={logo} alt="Logo" className="h-20 w-44" />
           </div>
 
           {/* Navigation */}
           <nav className="flex mt-5 space-x-10">
-            <a href="#home" className="text-base font-semibold hover:underline">
+            <Link to="/" className="text-base font-semibold hover:underline">
               HOME
-            </a>
+            </Link>
             <a href="#about" className="hover:underline">
               ABOUT
             </a>
-            <a
-              href="#projects"
-              className="text-base font-semibold hover:underline"
-            >
+            <a href="#projects" className="hover:underline">
               PROJECTS
             </a>
-            <a href="#blog" className="text-base font-semibold hover:underline">
+            <a href="#blog" className="hover:underline">
               BLOG
             </a>
             <a href="#media" className="text-base font-semibold hover:underline">
               MEDIA
             </a>
             <Link to='Contact' className="text-base font-semibold hover:underline">
+            <Link
+              to="/gallery"
+              className=" hover:underline"
+            >
+              GALLERY
+            </Link>
+            <a href="#contact" className="hover:underline">
               CONTACT
             </Link>
           </nav>
@@ -85,13 +84,15 @@ const Navbar = () => {
               <FaFacebookF />
             </span>
             <span>
-              <IoLogoInstagram className="font-base"/>
+              <a href="https://www.instagram.com/swastik_constructions_?igsh=YTRseXllYTFoMjVh">
+                <IoLogoInstagram />
+              </a>
             </span>
             <span>
               <IoLogoYoutube />
             </span>
             <span>
-              <IoLogoWhatsapp className="font-base text-bold" />
+              <IoLogoWhatsapp />
             </span>
           </div>
         </div>

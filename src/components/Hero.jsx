@@ -1,6 +1,12 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/swiper-bundle.css"; // Swiper styles
+import { Autoplay, Pagination, Navigation, EffectFade } from "swiper/modules";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import "swiper/css/effect-fade";
 
 import bg1 from "../assets/bg1.jpg";
 import bg2 from "../assets/bg2.jpg";
@@ -13,8 +19,15 @@ const Hero = () => {
       {/* Swiper Slider */}
       <Swiper
         loop={true} // Infinite loop
+        autoplay={{
+          delay: 4000, // Longer duration for smooth transition
+          disableOnInteraction: false, // Continue autoplay after user interaction
+        }}
+        effect="fade" // Smooth fade transition
+        fadeEffect={{ crossFade: true }} // Enable crossfade for smoother effect
         pagination={{ clickable: true }} // Pagination dots
         navigation={true} // Navigation arrows
+        modules={[Autoplay, Pagination, Navigation, EffectFade]} // Import Swiper modules
         className="h-full"
       >
         {/* Slide 1 */}

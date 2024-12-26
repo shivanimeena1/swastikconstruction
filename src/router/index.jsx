@@ -9,6 +9,9 @@ import Choose from '../components/Choose';
 import Nearby from '../components/Nearby';
 import Features from '../components/Features';
 import Contact from '../components/Contact';
+import Projects from '../components/Projects';
+import Gallery from '../components/Gallery';
+
 export const router = createBrowserRouter([
 
   
@@ -27,7 +30,8 @@ export const router = createBrowserRouter([
             <Choose/>
             <Nearby/>
             <Features/>
-            <Footer/>
+          <Projects/>
+          <Footer/>
           </>
         ),
       },
@@ -37,7 +41,11 @@ export const router = createBrowserRouter([
       },
       {
         path: 'Contact',
-        element:<Contact/>    
+        element:<Contact/>   
+      },
+      {
+        path: '/gallery',
+        element:<Gallery/>   
       },
     ],
   },
