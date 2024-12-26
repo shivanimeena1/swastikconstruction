@@ -1,5 +1,6 @@
 import React from "react";
 import footerImage from "../assets/footer_111111.jpg";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -34,9 +35,15 @@ const Footer = () => {
           <div>
             <h4 className="mb-2 text-2xl font-futura">Quick Link</h4>
             <ul className="space-y-2">
-              <li>→ About</li>
-              <li>→ Redevelopment</li>
-              <li>→ FAQ</li>
+              <li><Link to="/aboutUs" className="hover:underline text-white">
+            → About
+          </Link></li>
+              <li><Link to="/Contact" className="hover:underline text-white">
+            → Contact Us
+          </Link></li>
+              <li> <Link to="/project" className="hover:underline text-white">
+            → Projects
+          </Link></li>
             </ul>
           </div>
           <div>
