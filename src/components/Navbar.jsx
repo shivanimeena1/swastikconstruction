@@ -65,14 +65,13 @@ const Navbar = () => {
             <a href="#media" className="text-base font-semibold hover:underline">
               MEDIA
             </a>
-            <Link to='Contact' className="text-base font-semibold hover:underline">
             <Link
               to="/gallery"
               className=" hover:underline"
             >
               GALLERY
             </Link>
-            <a href="#contact" className="hover:underline">
+            <Link to="contact" className="hover:underline">
               CONTACT
             </Link>
           </nav>
