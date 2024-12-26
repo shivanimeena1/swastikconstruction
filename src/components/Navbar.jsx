@@ -5,7 +5,6 @@ import { IoLogoWhatsapp } from "react-icons/io5";
 import { FaFacebookF } from "react-icons/fa6";
 import { IoLogoInstagram } from "react-icons/io";
 import { IoLogoYoutube } from "react-icons/io5";
-import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isSticky, setIsSticky] = useState(false);
