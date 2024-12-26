@@ -24,10 +24,10 @@ const Navbar = () => {
     <div>
       {/* Top Section: Phone and Email */}
       {!isSticky && (
-        <div className="w-full px-3 py-4 text-sm text-white bg-black">
+        <div className="w-full px-3 py-6 text-lg text-white bg-black">
           <div className="container flex justify-end gap-3 mx-auto items-right">
             <span className="flex gap-2">
-              <IoLogoWhatsapp className="text-lg" /> PHONE: 91-808599475
+              <IoLogoWhatsapp className="text-2xl" /> PHONE: 91-808599475
             </span>
             <span> EMAIL: swastikconstruction545@gmail.com</span>
           </div>
@@ -38,19 +38,19 @@ const Navbar = () => {
       <header
         className={`fixed w-full z-20 transition-all duration-300 ease-in-out ${
           isSticky
-            ? "bg-white text-black shadow-md top-0"
+            ? "bg-white text-black shadow-md top"
             : "bg-transparent text-white"
         }`}
       >
-        <div className="container relative flex items-center justify-between px-4 py-3 mx-auto">
+        <div className="container relative flex items-center justify-between px-4 py mx-auto">
           {/* Logo */}
-          <div className={`text-4xl font-bold transition-all`}>
+          <div className={`text-6xl font-bold transition-all`}>
             <img src={logo} alt="Logo" className="h-20 w-44" />
           </div>
 
           {/* Navigation */}
-          <nav className="flex mt-5 space-x-10">
-            <Link to="/" className="text-base font-semibold hover:underline">
+          <nav className="flex mt-5 space-x-20">
+            <Link to="/" className=" text-2xl  font-semibold hover:underline">
               HOME
             </Link>
             <Link to="/aboutUs" className="hover:underline">
@@ -59,38 +59,38 @@ const Navbar = () => {
             <a href="#projects" className="hover:underline">
               PROJECTS
             </a>
-            <a href="#blog" className="hover:underline">
+            {/* <a href="#blog" className="hover:underline">
               BLOG
-            </a>
-            <a href="#media" className="text-base font-semibold hover:underline">
+            </a> */}
+            {/* <a href="#media" className="text-2xl font-semibold hover:underline">
               MEDIA
-            </a>
+            </a> */}
             <Link
               to="/gallery"
-              className=" hover:underline"
+              className=" text-2xl font-semibold hover:underline"
             >
               GALLERY
             </Link>
-            <Link to="contact" className="hover:underline">
+            <Link to="contact" className="text-2xl font-semibold hover:underline">
               CONTACT
             </Link>
           </nav>
 
           {/* Contact Info */}
-          <div className="items-center hidden mt-5 space-x-4 md:flex">
+          <div className="items-center hidden mt-5 space-x-7 md:flex">
             <span>
-              <FaFacebookF />
+              <FaFacebookF className="text-2xl" />
             </span>
             <span>
               <a href="https://www.instagram.com/swastik_constructions_?igsh=YTRseXllYTFoMjVh">
-                <IoLogoInstagram />
+                <IoLogoInstagram  className="text-2xl"/>
               </a>
             </span>
             <span>
-              <IoLogoYoutube />
+              <IoLogoYoutube className="text-2xl" />
             </span>
             <span>
-              <IoLogoWhatsapp />
+              <IoLogoWhatsapp className="text-2xl"/>
             </span>
           </div>
         </div>

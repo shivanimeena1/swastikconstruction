@@ -14,7 +14,7 @@ const Nearby = () => {
 
   return (
     <div
-      className="py-16 bg-center bg-cover"
+      className="py-16 mt-[100px] bg-center bg-cover"
       style={{ backgroundImage: `url(${bg})` }}
     >
       <div className="container flex flex-col items-center p-6 mx-auto bg-transparent rounded-md bg-opacity-80 md:flex-row">
