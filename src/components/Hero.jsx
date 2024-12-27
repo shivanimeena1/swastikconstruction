@@ -8,11 +8,14 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 
-import bg1 from "../assets/bg1.jpg";
+// import bg1 from "../assets/bg1.jpg";
 import bg2 from "../assets/bg2.jpg";
 import bg3 from "../assets/bg3.jpg";
 import bg4 from "../assets/bg4.jpg";
 import bg6 from "../assets/bg6.jpg"
+import bg1 from "../assets/bg7.webp";
+// import bg2 from "../assets/bg8.jpg";
+// import bg3 from "../assets/bg9.jpg";
 
 const Hero = () => {
   return (

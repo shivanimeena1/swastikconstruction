@@ -30,7 +30,7 @@ const Navbar = () => {
       {!isSticky && (
         <div className="w-full px-3 py-3 text-white bg-gradient-to-r from-[#fa9a5a] to-[#ca7411]">
 
-          <div className="container flex flex-col md:flex-row justify-between gap-3 mx-auto">
+          <div className="container flex flex-col justify-between gap-3 mx-auto md:flex-row">
             <span className="flex gap-2 text-center md:text-left">
               <TbBrandWhatsappFilled className="text-2xl text-white" /> PHONE:
               91-808599475
@@ -53,14 +53,20 @@ const Navbar = () => {
       >
         <div className="container relative flex items-center justify-between px-4 py-2 mx-auto">
           {/* Logo */}
-          <div className="text-6xl font-bold transition-all">
-            <img src={logo} alt="Logo" className="h-20 w-44" />
-          </div>
+          {/* Logo */}
+<div className="text-6xl font-bold transition-all">
+  <img
+    src={logo}
+    alt="Logo"
+    className="w-28 h-14 sm:h-14 sm:w-28 md:h-14 md:w-28" // Adjust sizes for smaller screens
+  />
+</div>
+
 
           {/* Hamburger Menu for Mobile */}
-          <div className="md:hidden flex items-center">
+          <div className="flex items-center md:hidden">
             <button
-              className="text-white text-3xl"
+              className="text-3xl text-white"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               <FaBars /> {/* You can replace this with a hamburger icon */}
@@ -68,7 +74,7 @@ const Navbar = () => {
           </div>
 
           {/* Navigation for larger screens */}
-          <nav className="hidden md:flex mt-5 space-x-14">
+          <nav className="hidden mt-5 md:flex space-x-14">
             <Link to="/" className=" hover:underline">
               HOME
             </Link>
@@ -87,7 +93,7 @@ const Navbar = () => {
           </nav>
 
           {/* Contact Info */}
-          <div className="hidden md:flex items-center mt-5 space-x-7">
+          <div className="items-center hidden mt-5 md:flex space-x-7">
             <span>
               <FaFacebookF className="text-2xl" />
             </span>
@@ -112,7 +118,8 @@ const Navbar = () => {
           isMenuOpen ? "block" : "hidden"
         }`}
       >
-        <Link to="/" className="font-semibold hover:underline">
+        <Link to="/" className="font-semibold hover:underline"
+         onClick={() => setIsMenuOpen(false)} >
           HOME
         </Link>
         <Link to="/aboutUs" className="hover:underline">
@@ -129,7 +136,7 @@ const Navbar = () => {
         </Link>
 
         {/* Social Media Icons */}
-        <div className="flex space-x-5 mt-4">
+        <div className="flex mt-4 space-x-5">
           <span>
             <FaFacebookF className="text-2xl" />
           </span>
